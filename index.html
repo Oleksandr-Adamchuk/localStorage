@@ -4,13 +4,14 @@
 	<title>Login to Google Maps</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/reset.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="scripts/script.js"></script>
+	
 </head>
 <body>
 	<header>
-		<h1>GoogleMaps POI</h1>
-		<p>Ivano-Frankivsk</p>
+		<h1>Company name</h1>
+		<p>slogan here</p>
 	</header>
 	<div class="line"><hr></div>
 	<div class="nav_wrapper">
@@ -50,22 +51,83 @@
 			</div>
 		</aside><!--
 		--><section class=content>
-			<form >
-			<input type="color">
-			<input type="date">
-			<input type="datetime">
-			<input type="datetime-local">
-			<input type="email">
-			<input type="month">
-			<input type="number">
-			<input type="range">
-			<input type="search">
-			<input type="tel">
-			<input type="time">
-			<input type="url">
-			<input type="week">
+			<h4>Заповніть, будь ласка, анкету:</h4>
+			<form id="localStorageTest">
+			<table class="table">
+				<tr>
+					<td>Ваше ім'я:</td>
+					<td><input type="text" name="username" id="name" class="stored" autofocus required/></td>
+				</tr>
+				<tr>
+					<td>Ваше прізвище:</td>
+					<td><input type="text" name="surname" id="surname" class="stored"  required/></td>
+				</tr>
+				<tr>
+					<td>Дата Вашого народження:</td>
+					<td><input type="date" name="birthday" id="date" class="stored" required/></td>
+				</tr>
+				<tr>
+					<td>Номер телефону:</td>
+					<td><input type="tel" name="tel_number" id="tel" class="stored"  required/></td>
+				</tr>
+				<tr>
+					<td>За скільки секунд пробіжите стометрівку?</td>
+					<td><input type="number" name="100m" id="100m" class="stored"  placeholder="50" required/></td>
+				</tr>
+				<tr>
+					<td>Адреса електронної пошти:</td>
+					<td><input type="email" name="email" id="email" class="stored"  placeholder="example@gmail.com"/></td>
+				</tr>
+				<tr>
+					<td>Ваш улюблений колір:</td>
+					<td><input type="color" name="color"/></td>
+				</tr>
+				<tr>
+					<td>Оберіть Вашу стать:</td>	
+					<td id="radio_wrapper">	
+						<input type="radio" name="gender" value="male"><p>Чоловік</p>
+						<input type="radio" name="gender" value="female"><p>Жінка</p>
+					 	<input type="radio" name="gender" value="other"><p>Інше</p>
+					 </td>
+				</tr>
+				<tr>
+					<td>Адреса Вашої web-сторінки:</td>
+					<td><input type="url" name="web_url" id="web_url" class="stored"  placeholder="http://page.com.ua"/></td>
+				</tr>
+				<tr>
+					<td>Ваш улюблений браузер</td>
+				 	<td><input list="browsers" id="browser" class="stored" placeholder="два кліка для вибору"/>
+						<datalist id="browsers">
+							<option value="Internet Explorer">
+							<option value="Firefox">
+							<option value="Google Chrome">
+							<option value="Opera">
+							<option value="Safari">
+						</datalist> 
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input class="submit_bt" type="submit" value="Підтвердити"></td>
+				</tr>
+		
+			</table>
 		</form>
 		</section>
 	</main>
+	<footer>
+		<small>&copy; All rights reserved. 2016</small>
+		 <address>
+			Written by <a href="mailto:stranger.if.2014@gmail.com">Oleksandr Adamchuk</a>.<br>
+			Visit us at:<br>
+			Example.com<br>
+			Box 564, Disneyland<br>
+			USA
+		</address> 
+	</footer>
+	
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

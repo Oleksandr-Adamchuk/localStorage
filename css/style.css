@@ -14,21 +14,22 @@ header {
 }
 
 header h1 {
-    color: #330066;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color: #012B35;
+    font-family: 'Lobster', cursive;
     font-size: 32px;
     font-weight: bold;
     text-shadow: 1px 1px 1px white;
+    padding: 30px 0px 0px 30px;
 }
 header > p {
-    color: #330066;
+    color: #012B35;
     font-family: Geneva, Arial, Helvetica, sans-serif;
-    font-size: 32px;
+    font-size: 21px;
     font-weight: bold;
     text-shadow: 1px 1px 1px white;
+    padding-left: 110px;
 }
-.line {
-}
+
 input {
     display: block;
 }
@@ -44,7 +45,7 @@ nav {
 nav li {
     display: inline;
     padding: 7px 11px;;
-    background-color: #ff9933;
+    background-color: #EEA500;
     border-radius: 2px;
 }
 nav li:hover {
@@ -52,7 +53,7 @@ nav li:hover {
 }
 nav a {
     font-family: Geneva, Arial, Helvetica, sans-serif;
-    color: black;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
 }
@@ -102,3 +103,30 @@ line-height: 20px;
 color: #000;
 }
 
+.content h4 {
+    font-size: 22px;
+    padding: 20px;
+    color: #333;
+    margin: 0px;
+    font-weight: normal;
+    font-family: Arial;
+    }
+.table td {
+    vertical-align: middle;
+    padding: 10px 10px 10px 10px;
+    
+}
+#radio_wrapper input {
+    display: inline;
+}
+.submit_bt {
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+footer {
+    background-color: #CCDFE3;
+    padding: 10px;
+    margin-top: 10px;
+}
