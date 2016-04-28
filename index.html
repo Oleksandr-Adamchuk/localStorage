@@ -2,11 +2,132 @@
 <html>
 <head>
 	<title>Login to Google Maps</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/reset.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="script/script.js"></script>
+	
 </head>
 <body>
-
+	<header>
+		<h1>Company name</h1>
+		<p>slogan here</p>
+	</header>
+	<div class="line"><hr></div>
+	<div class="nav_wrapper">
+	<nav>
+		<ul>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">New products</a></li>
+			<li><a href="#">Special offers</a></li>
+			<li><a href="#">Best sellers</a></li>
+			<li><a href="#">Hiring</a></li>
+		</ul>
+	</nav>
+	</div>
+	<main>
+		<aside>
+			<div>
+				<p>Питання, які можуть Вас цікавити</p>
+				<article>
+					<h3>Підбір в регіонах</h3>
+					<p>Усі регіональні відділення компанії дотримуються однаково високих стандартів та вимог щодо кваліфікацій, навичок, компетенцій та особистих якостей кандидатів. </p>
+				</article>
+				<article>
+					<h3>Чи є можливості кар’єрного та професійного розвитку в компанії?</h3>
+					<p>Ми безумовно зацікавлені у розвитку та постійному навчанні людей, які працюють в компанії.
+					Саме тому в компанії постійно діють навчальні програми та програми професійного розвитку для працівників покликані розвивати знання і вміння необхідні для успіху бізнесу. Ми пропонуємо багато кар’єрних можливостей.
+					Ми забезпечуємо навчання, роботу в команді, високопрофесійне середовище та сильну команду, які допоможуть Вам стати висококваліфікованим та успішним професіоналом.</p>
+				</article>
+				<article>
+					<h3>Як ваша компанія ставиться до гнучкого робочого графіку? </h3>
+					<p>Наша компанія пропонує гнучкий графік роботи, що може бути цікавим для молодих спеціалістів, які поєднують навчання та прагнуть здобувати досвід в бізнес-середовищі.</p>
+				</article>
+				<article>
+					<h3>Чи впливає сам працівник на свій кар’єрний розвиток?</h3>
+					<p>Так, працівник в першу чергу впливає на свій кар’єрний і професійний розвиток, забезпечуючи високі показники в роботі на своєму місці праці, якнайкраще виконуючи свої щоденні обов’язки.</p>
+				</article>
+				
+			</div>
+		</aside><!--
+		--><section class=content>
+			<h4>Заповніть, будь ласка, анкету:</h4>
+			<form id="localStorageTest">
+			<table class="table">
+				<tr>
+					<td>Ваше ім'я:</td>
+					<td><input type="text" name="username" id="name" class="stored" autofocus required/></td>
+				</tr>
+				<tr>
+					<td>Ваше прізвище:</td>
+					<td><input type="text" name="surname" id="surname" class="stored"  required/></td>
+				</tr>
+				<tr>
+					<td>Дата Вашого народження:</td>
+					<td><input type="date" name="birthday" id="date" class="stored" required/></td>
+				</tr>
+				<tr>
+					<td>Номер телефону:</td>
+					<td><input type="tel" name="tel_number" id="tel" class="stored"  required/></td>
+				</tr>
+				<tr>
+					<td>За скільки секунд пробіжите стометрівку?</td>
+					<td><input type="number" name="100m" id="100m" class="stored"  placeholder="50" required/></td>
+				</tr>
+				<tr>
+					<td>Адреса електронної пошти:</td>
+					<td><input type="email" name="email" id="email" class="stored"  placeholder="example@gmail.com"/></td>
+				</tr>
+				<tr>
+					<td>Ваш улюблений колір:</td>
+					<td><input type="color" name="color"/></td>
+				</tr>
+				<tr>
+					<td>Оберіть Вашу стать:</td>	
+					<td id="radio_wrapper">	
+						<input type="radio" name="gender" value="male"><p>Чоловік</p>
+						<input type="radio" name="gender" value="female"><p>Жінка</p>
+					 	<input type="radio" name="gender" value="other"><p>Інше</p>
+					 </td>
+				</tr>
+				<tr>
+					<td>Адреса Вашої web-сторінки:</td>
+					<td><input type="url" name="web_url" id="web_url" class="stored"  placeholder="http://page.com.ua"/></td>
+				</tr>
+				<tr>
+					<td>Ваш улюблений браузер</td>
+				 	<td><input list="browsers" id="browser" class="stored" placeholder="два кліка для вибору"/>
+						<datalist id="browsers">
+							<option value="Internet Explorer">
+							<option value="Firefox">
+							<option value="Google Chrome">
+							<option value="Opera">
+							<option value="Safari">
+						</datalist> 
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input class="submit_bt" type="submit" value="Підтвердити"></td>
+				</tr>
+		
+			</table>
+		</form>
+		</section>
+	</main>
+	<footer>
+		<small>&copy; All rights reserved. 2016</small>
+		 <address>
+			Written by <a href="mailto:stranger.if.2014@gmail.com">Oleksandr Adamchuk</a>.<br>
+			Visit us at:<br>
+			Example.com<br>
+			Box 564, Disneyland<br>
+			USA
+		</address> 
+	</footer>
+	
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
